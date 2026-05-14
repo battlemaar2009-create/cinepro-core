@@ -75,7 +75,6 @@ export class PoprProvider extends BaseProvider {
             });
 
             if (!res.ok) {
-                this.console.log(`[Popr] [${serverName}] Validation failed: HTTP ${res.status}`);
                 return { isValid: false, type: 'mp4' };
             }
 
@@ -97,7 +96,6 @@ export class PoprProvider extends BaseProvider {
                 });
                 
                 if (segmentLines.length === 0) {
-                    this.console.log(`[Popr] [${serverName}] Validation failed: Empty M3U8 playlist.`);
                     return { isValid: false, type: 'hls' };
                 }
 
@@ -108,13 +106,11 @@ export class PoprProvider extends BaseProvider {
                 trimmed.toLowerCase().includes('<!doctype html>') ||
                 trimmed.toLowerCase().includes('<html')
             ) {
-                this.console.log(`[Popr] [${serverName}] Validation failed: Returned HTML error page.`);
                 return { isValid: false, type: 'mp4' };
             }
 
             return { isValid: true, type: 'mp4' };
         } catch (error) {
-            this.console.log(`[Popr] [${serverName}] Validation request failed: ${error instanceof Error ? error.message : 'Unknown error'}`);
             return { isValid: false, type: 'mp4' };
         }
     }
@@ -203,10 +199,6 @@ export class PoprProvider extends BaseProvider {
                             },
                             subtitles: data.results?.[0]?.subtitles || []
                         };
-                    })
-                    .catch((error) => {
-                        this.console.error(`[Popr] [${server}] Request failed: ${error instanceof Error ? error.message : 'Unknown'}`);
-                        return null;
                     })
         );
 
