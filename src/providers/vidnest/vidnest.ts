@@ -168,7 +168,7 @@ export class VidNestProvider extends BaseProvider {
                 root.sources.map((s) => ({
                     url: this.createProxyUrl(s.url),
                     type: this.inferSourceType(s.format, s.url),
-                    quality: s.name,
+                    quality: this.inferQuality(s.name),
                     audioTracks: [{ language: 'French', label: 'fr' }],
                     provider: { id: this.id, name: this.name }
                 })),
