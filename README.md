@@ -76,6 +76,14 @@ For Docker, production deployment, and advanced configuration options → **[Qui
 
 Full documentation, API references, configuration guides, and provider development resources are available at **[CinePro Docs](https://docs.cinepro.cc)**.
 
+### Deployment Guides
+
+We recommend running CinePro Core locally for personal use. However, it can also be hosted on a server or cloud platform.
+
+For that we've prepared [deployment guides](https://docs.cinepro.cc/quickstart). However, you can also deploy it using these services: 
+
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/cinepro-org/core) [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/cinepro-org/core) [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/cinepro-org/core)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contributing
