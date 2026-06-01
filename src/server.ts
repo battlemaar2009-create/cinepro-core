@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const server = new OMSSServer({
+  version: "1.0.0",
     name: 'CinePro',
     port: 3000,
     host: '0.0.0.0',
