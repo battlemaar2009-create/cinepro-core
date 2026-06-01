@@ -1,6 +1,6 @@
 {
     "name": "cinepro-core",
-    "main": "dist/server.js",
+    "main": "server.js",
     "compatibility_date": "2026-06-01",
     "compatibility_flags": [
         "nodejs_compat"
