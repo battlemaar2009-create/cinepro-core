@@ -5,7 +5,7 @@
     "type": "module",
     "scripts": {
         "dev": "tsx watch src/server.ts",
-        "build": "npm run build "build": "tsc --noEmit || echo Building...""build": "tsc --noEmit || echo Building..." cp dist/server.js server.js",
+        "build": "npm run build "build": "npm run build "build": "tsc --noEmit || echo Building...""build": "tsc --noEmit || echo Building..." cp dist/server.js server.js""build": "npm run build "build": "tsc --noEmit || echo Building...""build": "tsc --noEmit || echo Building..." cp dist/server.js server.js" cp dist/server.js server.js",
         "start": "npm run build && node dist/server.js",
         "format": "prettier --write src",
         "clean": "npx rimraf dist"
